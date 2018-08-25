@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <title>Cadastre o projeto</title>
+        <link rel="stylesheet" type="text/css" href="../css/projeto.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+        <meta charset="UTF-8"/>
+        <title>Cadastre um projeto</title>
     </head>
     <body>
-        <section class = "cadastre">
+        <header>
+            <div style="text-align: center; margin: 0px auto;">
+                <img id="logo" src="../../media/titulo.png" style="align-content: center" height="80%" width="80%">
+            </div>
+        </header>
         
-            <form>                           
-                Nome:
-                <input type="text" name="name">
-                Localidade:
-                <input type="text" name="local">
-                Dia da semana:
-                <input type="text" name="day">
-                Objetivo:
-                <input type="text" name="objetivo">
-                Categoria:
-                <input type="text" name="category">
-                Cronograma:
-                <input type="text" name="schedule">
-                Início:
-                <input type="text" name="start">
-                Fim:
-                <input type="text" name="end">
-                Capacitação:
-                <input type="text" name="capacitacao">
-                Metodologia:
-                <input type="text" name="metodologia">
-                Descrição:
-                <input type="text" name="description">
-
-        </section>
-
-                <button type="submit">Cadastrar</button>
-            </form>
-        </div>    
+        
+        <fieldset class="cadastro">
+            <div class="cadastro">
+                <form action="cadastrarProjeto.php" method="POST">
+                    <input type="text" name="nome" placeholder="Nome do projeto" maxlength="200"><br>
+                    <input type="text" name="local" placeholder="Local" maxlength="100"><br>
+                    <input type="text" name="objetivo" placeholder="Objetivo" maxlength="400"><br>
+                    <input type="text" name="Categoria" placeholder="Categoria" maxlength="300"><br>
+                    <input type="text" name="Cronograma" placeholder="Cronograma" maxlength="300"><br>
+                    <input type="text" name="capacitacao" placeholder="Capacitação" maxlength="300"><br>
+                    <input type="text" name="metodologia" placeholder="Metodologia" maxlength="400"><br>
+                    <input type="text" name="descrição" placeholder="Descrição" maxlength="400"><br>
+                    <input type="text" name="Início" type="date" placeholder="Início"><br>
+                    <input type="text" name="Fim" type="date" placeholder="Fim"><br>
+                    <div class="checkbox">
+                        <input type="checkbox" name="radio" value="Dom">Domingo
+                        <input type="checkbox" name="radio" value="Seg">Segunda-feira
+                        <input type="checkbox" name="radio" value="Ter">Terça-feira
+                        <input type="checkbox" name="radio" value="Qua">Quarta-feira
+                        <input type="checkbox" name="radio" value="Qui">Quinta-feira
+                        <input type="checkbox" name="radio" value="Sex">Sexta-feira
+                        <input type="checkbox" name="radio" value="Sab">Sábado
+                    </div>
+                    
+                    <button type="submit">Cadastrar</button>
+                
+                
+                </form>
+            </div>
+        </fieldset>
     </body>
 </html>

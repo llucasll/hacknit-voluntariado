@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `projetos` (
   `localidade` varchar(100) DEFAULT NULL,
   `horario` varchar(200) DEFAULT NULL,
   `fim` date DEFAULT NULL,
-  `diaDeSemana` varchar(3) NOT NULL,
+  `diaDeSemana` varchar(21) NOT NULL,
   `descricao` varchar(400) NOT NULL,
   `categoria` varchar(300) NOT NULL,
   `objetivo` varchar(400) NOT NULL,
@@ -60,11 +60,11 @@ CREATE TABLE IF NOT EXISTS `projetos` (
 --
 
 CREATE TABLE IF NOT EXISTS `usuarios` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) AUTO_INCREMENT,
   `nome` tinytext NOT NULL,
   `idade` tinyint(4) DEFAULT NULL,
   `descricao` text,
-  `email` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL UNIQUE,
   `telefone` tinytext,
   `senha` tinytext NOT NULL,
   `proativo` int(11) DEFAULT NULL,

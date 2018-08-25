@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="../css/resultado.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <title>Resultado</title>
 </head>
 
@@ -17,59 +18,43 @@ da página se pode usar o body ou .html -->
     <div class="conteudo">
         <div class ="buscaLateral">
             <form class="form" action="/action_page.php">
-                    <div class = "edu">
-                        <label for="education">Educação</label>
-                        <input type="checkbox" class="filter" name="education" value="false" unchecked />
-                    </div>
-                    <div class="health">   
-                        <label for="health">Saúde</label>
-                        <input type="checkbox" class="filter" name="health" value="false" unchecked />
-                    </div> 
-                    <div class = "meio">  
-                        <label for="meioambiente">Meio Ambiente</label>
-                        <input type="checkbox" class="filter" name="meioambiente" value="false" unchecked />
-                    </div class = "security">  
-                        <label for="seguranca">Segurança</label>
-                        <input type="checkbox" class="filter" name="security" value="false" unchecked />
-                        
-                    </div>
-                    </div class = "sunday">  
-                    <label for="sunday">Domingo</label>
-                    <input type="checkbox" class="filter" name="sunday" value="false" unchecked />
-                    </div class = "monday">  
-                    <label for="monday">Segunda-feira</label>
-                    <input type="checkbox" class="filter" name="sunday" value="false" unchecked />
-                    </div class = "thursday">  
-                    <label for="thursday">Terça-feira</label>
-                    <input type="checkbox" class="filter" name="thursday" value="false" unchecked />
-                    </div class = "wednesday">  
-                    <label for="wednesday">Quarta-feira</label>
-                    <input type="checkbox" class="filter" name="wednesday" value="false" unchecked />
-                    </div class = "Tuesday">  
-                    <label for="tuesday">Quinta-feira</label>
-                    <input type="checkbox" class="filter" name="tuesday" value="false" unchecked />
-                    </div class = "friday">  
-                    <label for="friday">Sexta-feira</label>
-                    <input type="checkbox" class="filter" name="friday" value="false" unchecked />
-                    </div class = "saturday">  
-                    <label for="saturday">Sábado</label>
-                    <input type="checkbox" class="filter" name="saturday" value="false" unchecked />
-                    <button id="submit">Limpar filtros</button>
-            </div>
+                    <h3>Área:</h3>
+                    <input type="checkbox" class="filter" name="education" value="false" unchecked />Educação<br>
+
+                    <input type="checkbox" class="filter" name="health" value="false" unchecked />Saúde<br>
+                    <input type="checkbox" class="filter" name="meioambiente" value="false" unchecked />Meio Ambiente<br>
+
+                    <input type="checkbox" class="filter" name="security" value="false" unchecked />Segurança<br>
+                    <h3>Dias da semana:</h3>
+
+                    <input type="checkbox" class="filter" name="sunday" value="false" unchecked />Domingo<br>
+                    <input type="checkbox" class="filter" name="monday" value="false" unchecked />Segunda<br>
+                    <input type="checkbox" class="filter" name="thursday" value="false" unchecked />Terça<br>
+                    <input type="checkbox" class="filter" name="wednesday" value="false" unchecked />Quarta<br>
+                    <input type="checkbox" class="filter" name="tuesday" value="false" unchecked />Quinta<br>
+                    <input type="checkbox" class="filter" name="friday" value="false" unchecked />Sexta<br>
+                    <input type="checkbox" class="filter" name="saturday" value="false" unchecked />Sábado<br>
+                    <button id="submit">Limpar filtros</button>                            
             </form>
-        </div>
-        <div class="card-first">
-            <span class="card-title">Project Title</span>
-            <img class="img" src="../../media/ponte.jpg">
-            <div class="card-content">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </div>
-            <button class="descricao">Ver projeto</button>
+            <div class="card">
+                    <img src="../../media/praia.jpg" alt="Avatar" style="width:100%">
+                <div class="day">Dia 27/08/2018 - Icaraí</div>
+                <div class="container">
+                    <h4><b>Nome do Evento</b></h4> 
+                    <p>Descrição linda aqui</p> 
+                    <button id="ver">Ver projeto</button>
+                </div>
+            </div>
+            
         </div>
     </div>
+    <!--
+        <footer>
+        <p>Projeto desenvolvido durante a HackNit</p>
+        <img src="../../media/Logo_niteroi.png" alt="Logo Niteroi" style="width:15%">
+    </footer>
+    -->
+    
 </body>
 </html>
