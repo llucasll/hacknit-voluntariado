@@ -34,14 +34,9 @@
 			
 			$sql = "select * from usuarios where id=$id";
 			include "../src/bd/select.php";
-			var_dump($resposta);
-			foreach($resposta as $linha){
-				echo "tamanho".count($linha);
-				if(count($linha)){
+			foreach($resposta as $linha)
+				if(count($linha))
 					$usuario = $linha;
-					echo "oi";
-				}
-			}
 			
 		?>
 			
@@ -52,14 +47,11 @@
 				$sql = "select * from projetos where id=$id";
 				include "../src/bd/select.php";
 				$nome = $resposta[0]["nome"];
-				echo "<p> $nome </p>";
 			}
-			
-			var_dump($usuario);
 		?>
 		
 		<div class="infos">
-		    <img id="persona" src="../../media/persona1.png" height="20%" width="20%">  
+		    <img id="persona" src="../media/persona1.png" height="20%" width="20%">  
 		    <h1><?= $usuario["nome"] ?></h1>
 		    <h2>Voluntário iniciante</h2>
 		    <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -75,7 +67,7 @@
 		<div class="tela-atuais">
 		    <h1 id="titulo-atuais">Projetos que você está ajudando!</h1>
 		    <div class="card">
-		        <img src="../../media/foto.jpg" alt="Avatar" style="width:100%">
+		        <img src="../media/foto.jpg" alt="Avatar" style="width:100%">
 		        <div class="day">Dia 27/08/2018 - Icaraí</div>
 		        <div class="container">
 		            <h4><b>Nome do Evento</b></h4> 
@@ -96,7 +88,7 @@
 
 		<footer>
 		    <p>Projeto desenvolvido durante a HackNit</p>
-		    <img src="../../media/Logo_niteroi.png" alt="Logo Niteroi" style="width:15%">
+		    <img src="../media/Logo_niteroi.png" alt="Logo Niteroi" style="width:15%">
 		</footer>
 	</body>
 </html>
