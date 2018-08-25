@@ -1,0 +1,44 @@
+body{
+    margin:0;
+}
+.buscaLateral{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace; 
+    margin: 0 20px 0 0;
+    float: left;
+    
+}
+.img{
+    width: 250px;
+    height: 150px;
+    margin: 0 0 0 20px;
+}
+.form{
+    background: grey;
+    width: 180px;
+    height: 100vh;
+    font-size: 1em;
+    color: black;
+    display: inline-block;
+    max-width: 190px;   
+}
+#conteudo {
+    width: 100%;
+    float: right;
+    text-align: center;
+    position:fixed;
+    margin: 0 20px 0 0;
+}
+.card-first{
+    width: 70%;
+    height: 450px;
+    background: grey;
+    text-align: justify; 
+    margin: 20px;
+    max-width: 280px;
+    float: left;
+}
+
+.descrição{
+    align-content: center;
+}
