@@ -1,15 +1,21 @@
 <?php
 	include "conecta.php";
 
-	/* enviando a consulta para o banco de dados */
-	$resposta = mysql_query($sql);
-	
-	if(!$resposta){
+	if ($result=mysqli_query($link, $sql)){
+		// Fetch one and one row
+		$resposta = array();
+		while ($row=mysqli_fetch_assoc($result)){
+			$resposta[] = $row;
+		}
+		// Free result set
+		mysqli_free_result($result);
+	}
+	else{
 		/* erro ao executar a consulta */
-		echo mysql_error();
+		echo mysqli_error($link);
 	}
 	
 	/* fecha a conexão */
-	mysql_close($link);
+	mysqli_close($link);
 ?>
 

@@ -7,20 +7,11 @@
 	$banco = "voluntariado";
 
 	/* abre a conexão */
-	$link = mysql_connect($host,$usuario,$senha);
-	if(!$link)
-	{
-		/* não conseguiu abrir a conexão */
-		echo mysql_error();
-		die();
-	}
-
-	/* seleciona o banco de dados */
-	if(!mysql_select_db($banco))
-	{
-		/* erro ao selecionar o banco de dados */
-		echo mysql_error();
-		mysql_close($link);
-		die();
+	$link = new mysqli($host,$usuario,$senha, $banco);
+	
+	/* check connection */
+	if (mysqli_connect_errno()) {
+		printf("Connect failed: %s\n", mysqli_connect_error());
+		exit();
 	}
 ?>
