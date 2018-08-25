@@ -8,6 +8,72 @@
     margin: 0 auto;
 }
 
+.topnav {
+    background-color: #555151;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.topnav a.form form input{
+    width: 270px;
+    height: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 15px;
+    margin-top: 8px;
+    float: left;
+}
+
+.topnav a.form form button.botao{
+    width: 80px;
+    height: 28px;
+    float: center;
+    text-align: center;
+    margin: 0px auto;
+    font-size: 20px;
+    color: #555151;
+    font-weight: normal;
+    background-color: #76dbd1;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    border-width: 0px;
+    box-shadow: 3px 3px 4px #555;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+.topnav a.cadastro {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 19px;
+    height: 45px;
+    float: right;
+}
+.topnav a.cadastro:hover {
+    float: right;
+    color: #555151;
+    background-color: #ecf4f3;
+    text-align: center;
+    padding: 8px 16px;;
+    text-decoration: none;
+    font-size: 22px;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
 
 p{
     text-align: center;
@@ -48,7 +114,6 @@ div.opcoes div.afinidade button.principal{
     background-color: #76dbd1;
     font-family: 'Raleway', sans-serif;
     border-radius: 5px;
-    box-shadow: -4px 4px 4px #555151;
     border-width: 0px;
 }
 
@@ -91,7 +156,6 @@ div.opcoes div.disponibilidade button.principal{
     font-family: 'Raleway', sans-serif;
     border-radius: 5px;
     border-width: 0px;
-    box-shadow: 3px 3px 4px #555;
 }
 
 div.opcoes div.disponibilidade div fieldset{
@@ -132,6 +196,7 @@ div.opcoes div.afinidade{
     justify-content: left;
     align-content: left;
     float: left;
+    margin-left: 51px;
 }
 
 div.opcoes div.disponibilidade{
@@ -141,6 +206,7 @@ div.opcoes div.disponibilidade{
     max-width: 300px;
     justify-content: right;
     align-content: right;
+    margin-right: 51px; 
 }
 
 div.opcoes img{

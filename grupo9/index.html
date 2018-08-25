@@ -8,8 +8,19 @@
 </head>
 <body>
     <header>
+        <div class="topnav">
+            <a class="cadastro" href="src/pages/cadastro.html">Cadastre-se</a>
+            <a class="form">
+                <form action="login.php" method="POST">
+                    <input class="entrada" type="email" placeholder="Email" maxlength="100">
+                    <input class="entrada" type="password" placeholder="Senha" maxlength="100">
+                        <button class="botao" type="submit">Login</button>
+                </form>
+            </a>
+        </div> 
+        <br><br>
         <div class="logo" >
-            <img id="logo" src="media/titulo.png" style="align-content: center" height="100%" width="100%">
+            <img id="logo" src="media/titulo.png" style="align-content: center" height="80%" width="80%">
         </div>
     </header>
     <!--<div id="login" style="text-align: center; width: 50%; margin: 0px auto;">
