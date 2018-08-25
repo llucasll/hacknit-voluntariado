@@ -1,15 +1,66 @@
+<?php
+	ini_set('display_errors', 1);
+	try{
+		$id = isset($_REQUEST['id']) ? $_REQUEST['id'] : 0;
+	/*if(!$id){
+		$redirect = "../index.php";
+		header("location:$redirect");
+	}
+	else{*/
+	
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="../css/perfil.css">
-		<script src="../js/perfil.js"></script>
+		<link rel="stylesheet" type="text/css" href="src/css/perfil.css">
+		<script src="src/js/perfil.js"></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	</head>
 	<body>
+		<?php
+			$sql = "select * from atribuicoes where usuario=$id";
+			//echo getcwd();
+			include "../src/bd/select.php";
+			//print_r($resposta[1]);
+			$projetos = array();	
+			foreach($resposta as $linha){
+				if(count($linha)){
+					//print_r($linha);
+					$projetos[] = $linha["projeto"];
+				}
+			}
+			
+			$sql = "select * from usuarios where id=$id";
+			include "../src/bd/select.php";
+			var_dump($resposta);
+			foreach($resposta as $linha){
+				echo "tamanho".count($linha);
+				if(count($linha)){
+					$usuario = $linha;
+					echo "oi";
+				}
+			}
+			
+		?>
+			
+		<button>Interesses</button>
+		<button>Projetos passados</button>
+		<?php
+			foreach($projetos as $id){
+				$sql = "select * from projetos where id=$id";
+				include "../src/bd/select.php";
+				$nome = $resposta[0]["nome"];
+				echo "<p> $nome </p>";
+			}
+			
+			var_dump($usuario);
+		?>
+		
 		<div class="infos">
 		    <img id="persona" src="../../media/persona1.png" height="20%" width="20%">  
-		    <h1>Bruno</h1>
+		    <h1><?= $usuario["nome"] ?></h1>
 		    <h2>Voluntário iniciante</h2>
 		    <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 		    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -49,3 +100,9 @@
 		</footer>
 	</body>
 </html>
+
+<?php } // } 
+	catch(Exception $e) {
+		echo 'Exceção capturada: ',  $e->getMessage(), "\n";
+	}
+?>

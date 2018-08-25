@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-color: #CFE8E8;
 }
@@ -27,4 +28,93 @@ body{
 #descricao{
     text-align: center;
     margin: auto 15% 2%;
+=======
+#login{
+    padding: 20px;
+    margin:0 auto;
+    height:60px;
+}
+#login #input body{
+    align-content: center;
+    margin: 0 auto;
+}
+
+
+p{
+    text-align: center;
+    padding: 0 auto;
+}
+
+
+#listaInt, #listaDias{
+    display: none;
+}
+
+body{
+    background-color: #ecf4f3;
+}
+header div.logo{
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+div.opcoes{
+    margin-top: 300px;
+}
+
+div.opcoes h3{
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+div.opcoes div.afinidade button{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: normal;
+    color: #555151;
+    background-color: #76dbd1;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    box-shadow: -4px 4px 4px #555151;
+    border-width: 0px;
+}
+div.opcoes div.disponibilidade button{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: #555151;
+    font-weight: normal;
+    background-color: #5bb0a2;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    border-width: 0px;
+    box-shadow: 3px 3px 4px #555;
+}
+
+div.opcoes div.afinidade{
+    position: relative;
+    border-width: 0px;
+    border-radius: 10px;
+    max-width: 300px;
+    justify-content: left;
+    align-content: left;
+    float: left;
+}
+
+div.opcoes div.disponibilidade{
+    position: relative;
+    border-width: 0px;
+    border-radius: 10px;
+    max-width: 300px;
+    justify-content: right;
+    align-content: right;
+}
+
+div.opcoes img{
+    float: center;
+    margin-bottom: 30px;
+>>>>>>> lucas2
 }
