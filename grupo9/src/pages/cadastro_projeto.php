@@ -6,7 +6,7 @@
     </head>
     <body>
         <div class = "cadastre">
-            <form>                           
+            <form action="../src/interno/cadastrar.php" method="POST">                           
                 Nome:
                 <input type="text" name="name">
                 Localidade:

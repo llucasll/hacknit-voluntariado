@@ -13,7 +13,7 @@ da página se pode usar o body ou .html -->
     <div class="buscaLateral">
         <!--div para a caixa lateral que se localizará a esquerda para que a busca 
     possa continuar na página de resultados -->
-        <form action="/action_page.php">
+        <form action="tela_de_resultado" method="POST">
             <div>
                 <input type="checkbox" class="filter" name="education" value="false" unchecked />
                 <label for="education">Educação</label>

@@ -5,7 +5,7 @@
         <title>Login</title>
     </head>
     <body>
-        <form>
+        <form action="../src/interno/login.php" method="POST">
             Nome:
             <input type="text" name="username">
             Senha:

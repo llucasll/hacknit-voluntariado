@@ -16,7 +16,7 @@
         
         <fieldset class="cadastro">
         <div class="cadastro">
-        <form action="cadastrar.php" method="POST">
+        <form action="../src/interno/cadastrar.php" method="POST">
             <input type="text" name="username" placeholder="Nome" maxlength="200"><br>
             <input type="password" name="psw" type="password" placeholder="Senha" maxlength="200"><br>
             <input type="text" name="age" placeholder="Idade" maxlength="2"><br>
