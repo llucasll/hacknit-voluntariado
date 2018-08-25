@@ -22,29 +22,24 @@
 		
 		<?php
 			$sql = "select * from atribuicoes where usuario=$id";
-			echo getcwd();
+			//echo getcwd();
 			include "../src/bd/select.php";
-			//print_r($resposta);
-			$funcoes = array();
-			foreach($resposta as $linha)
-				$funcoes[] += $linha["funcao"];
-			
-			$projetos = array();
-			foreach($funcoes as $linha){
-				$tmp = $linha["projeto"];
-				$sql = "select * from funcoes where projeto=$tmp";
-				include "../src/bd/select.php";
-				$projetos[] += $resposta[0]["projeto"];
+			//print_r($resposta[1]);
+			$projetos = array();	
+			foreach($resposta as $linha){
+				if(count($linha)){
+					//print_r($linha);
+					$projetos[] = $linha["projeto"];
+				}
 			}
 			
-			$projetos = array();
-			foreach($funcoes as $tmp){
-				$sql = "select * from projetos where id=$tmp";
+			foreach($projetos as $id){
+				$sql = "select * from projetos where id=$id";
 				include "../src/bd/select.php";
 			}
 		?>
 				
-				<p> <?= $resposta[0]["nome"] ?> </p>
+		<p> <?= $resposta[0]["nome"] ?> </p>
 			
 		<button>Interesses</button>
 		<button>Projetos passados</button>

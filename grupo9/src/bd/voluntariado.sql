@@ -103,9 +103,9 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
-INSERT INTO `projetos` (`id`, `nome`, `inicio`, `localidade`, `horario`, `fim`, `diaDeSemana`, `descricao`, `categoria`, `objetivo`, `metodologia`, `capacitacao`, `cronograma`, `relevancia`) VALUES (NULL, 'Projeto', '2018-08-01', 'fgawyugeya', 'hajkhbuygas', '2018-08-23', 'daa', 'dsdfdvfvewe', 'fvsdvdsvdsdv', 'dsvdsvdssvsdvd', 'vdssddvsd', 'vsdvsdvsdvds', 'dsvsddvssd', '9');
+INSERT INTO `projetos` (`id`, `nome`, `inicio`, `localidade`, `horario`, `fim`, `diaDeSemana`, `descricao`, `categoria`, `objetivo`, `metodologia`, `capacitacao`, `cronograma`, `relevancia`) VALUES (0, 'Projeto', '2018-08-01', 'fgawyugeya', 'hajkhbuygas', '2018-08-23', 'daa', 'dsdfdvfvewe', 'fvsdvdsvdsdv', 'dsvdsvdssvsdvd', 'vdssddvsd', 'vsdvsdvsdvds', 'dsvsddvssd', '9');
 
-INSERT INTO `usuarios` (`id`, `nome`, `idade`, `descricao`, `email`, `telefone`, `senha`, `proativo`, `organizado`, `produtivo`, `simpatico`, `comunicativo`) VALUES (NULL, 'Usuario', '88', 'usigiuagas', 'kgkgjyg', '879', 'kjug', '9', '9', '9', '9', '9');
+INSERT INTO `usuarios` (`id`, `nome`, `idade`, `descricao`, `email`, `telefone`, `senha`, `proativo`, `organizado`, `produtivo`, `simpatico`, `comunicativo`) VALUES (0, 'Usuario', '88', 'usigiuagas', 'kgkgjyg', '879', 'kjug', '9', '9', '9', '9', '9');
 
 INSERT INTO `funcoes` (`projeto`, `funcao`) VALUES ('0', 'Funcao');
 
