@@ -1,3 +1,7 @@
-.check{
-    background-color: rgb(8, 8, 105)
+#check{
+    color: #454353;
+    font-size: 3em;
+}
+#check:hover{
+    color: red;
 }

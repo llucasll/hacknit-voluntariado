@@ -1,3 +1,30 @@
+body{
+    background-color: #CFE8E8;
+}
 #listaInt, #listaDias{
     display: none;
+}
+.bttBig, .bttOpt{
+    background-color: #D40000;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 2px 2px 0 #8C0000;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    
+}
+.buttons, #listaInt, #listaDias{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.home{
+    position: absolute;
+    bottom: 50%;
+}
+#descricao{
+    text-align: center;
+    margin: auto 15% 2%;
 }
