@@ -1,30 +1,7 @@
--- phpMyAdmin SQL Dump
--- version 4.1.14
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: 25-Ago-2018 às 10:07
--- Versão do servidor: 5.6.17
--- PHP Version: 5.5.12
+drop database if exists voluntariado;
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
--- Database: `voluntariado`
---
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `atribuicoes`
---
+create database voluntariado;
+use voluntariado;
 
 CREATE TABLE IF NOT EXISTS `atribuicoes` (
   `funcao` int(11) NOT NULL DEFAULT '0',
@@ -64,6 +41,7 @@ CREATE TABLE IF NOT EXISTS `projetos` (
   `localidade` varchar(100) DEFAULT NULL,
   `horario` varchar(200) DEFAULT NULL,
   `fim` date DEFAULT NULL,
+  `diaDeSemana` varchar(3) NOT NULL,
   `descricao` varchar(400) NOT NULL,
   `categoria` varchar(300) NOT NULL,
   `objetivo` varchar(400) NOT NULL,
@@ -95,7 +73,3 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `comunicativo` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
