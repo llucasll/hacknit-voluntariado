@@ -2,41 +2,54 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="src/css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
     <script src="src/js/home.js"></script>
+    <meta charset="UTF-8">
 </head>
 <body>
-    <input placeholder="Email" type="email">
-    <input placeholder="Password" type="password">
-    <button>Login</button>
-    <button>Cadastro</button>
-    <!-- <img src="" alt="Logo" height="20%" width="20%"> -->
-    <div class="home">
-        <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <div class="buttons">
-            <button class="bttBig" onclick="bttInt()">Áreas de interesse</button>
-            <button class="bttBig" onclick="bttDias()">Dias disponíveis</button>
+    <header>
+        <div class="logo" >
+            <img id="logo" src="media/titulo.png" style="align-content: center" height="100%" width="100%">
         </div>
+    </header>
+    <!--<div id="login" style="text-align: center; width: 50%; margin: 0px auto;">
+         <div id="input">
+            <input placeholder="Email" type="email">
+            <input placeholder="Password" type="password">
+        </div> 
+        
+        <button>Login</button>
+        <button>Cadastro</button>-->
+    </div>
     
-        <div id="listaInt">
-            <button class="bttOpt">Educação</button>
-            <button class="bttOpt">Saúde</button>
-            <button class="bttOpt">Meio Ambiente</button>
-            <button class="bttOpt">Animais</button>
+    <div class="opcoes" style="text-align: center; width: 50%; margin: 0px auto;">
+            <h3>Agora que você já tem interesse, vamos começar!</h3>
+        <div class="afinidade" style="float: left">
+            <Button>Afinidade</Button>
+            <!-- <img src="media/btnAfinidade.png" alt="btnAfinidade" height="100%" width="100%" style="align-content: center">
+            <div id="listaInt">
+                <button>Educação</button>
+                <button>Saúde</button>
+                <button>Meio Ambiente</button>
+                <button>Animais</button>
+            </div>-->
+        
         </div>
-    
-        <div id="listaDias">
-            <button class="bttOpt">Domingo</button>
-            <button class="bttOpt">Segunda-feira</button>
-            <button class="bttOpt">Terça-feira</button>
-            <button class="bttOpt">Quarta-feira</button>
-            <button class="bttOpt">Quinta-feira</button>
-            <button class="bttOpt">Sexta-feira</button>
-            <button class="bttOpt">Sábado</button>
+        <div class="disponibilidade" style="float: right">
+            <Button>Disponibilidade</Button>
+            <!-- <img src="media/btnDisponibilidade.png" alt="btnDisponibilidade" height="100%" width="100%" style="align-content: center">
+            <div id="listaDias">
+                    <button>Domingo</button>
+                    <button>Segunda-feira</button>
+                    <button>Terça-feira</button>
+                    <button>Quarta-feira</button>
+                    <button>Quinta-feira</button>
+                    <button>Sexta-feira</button>
+                    <button>Sábado</button>
+                </div>-->
+        
         </div>
     </div>
 </body>
 </html>
+

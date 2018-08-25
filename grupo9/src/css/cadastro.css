@@ -1,0 +1,44 @@
+
+body{
+    background-color: #ecf4f3;
+}
+header div{
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+}
+
+header{
+    margin-bottom: 50px;
+}
+
+fieldset.cadastro{
+    margin-top: 50px;
+    border-width: thick;
+    border-color: #555151;
+    border-radius: 7px;
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+    max-width: 300px;
+}
+
+fieldset.cadastro div.cadastro form input{
+    width: 380px;
+    height: 28px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+fieldset.cadastro div.cadastro form button{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: normal;
+    color: #555151;
+    background-color: #76dbd1;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    border-width: 0px;
+}
