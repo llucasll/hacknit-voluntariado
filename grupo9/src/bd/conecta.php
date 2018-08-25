@@ -2,12 +2,12 @@
 	/* Exemplo de código para abrir conexão com banco de dados */
 
 	$host = "localhost";
-	$usuario = "root";
+	$user = "root";
 	$senha = "llucasll";
 	$banco = "voluntariado";
 
 	/* abre a conexão */
-	$link = new mysqli($host,$usuario,$senha, $banco);
+	$link = new mysqli($host,$user,$senha, $banco);
 	
 	/* check connection */
 	if (mysqli_connect_errno()) {

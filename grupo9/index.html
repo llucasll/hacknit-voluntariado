@@ -8,8 +8,19 @@
 </head>
 <body>
     <header>
+        <div class="topnav">
+            <a class="cadastro" href="src/pages/cadastro.html">Cadastre-se</a>
+            <a class="form">
+                <form action="login.php" method="POST">
+                    <input class="entrada" type="email" placeholder="Email" maxlength="100">
+                    <input class="entrada" type="password" placeholder="Senha" maxlength="100">
+                    <button class="botao" type="submit">Login</button>
+                </form>
+            </a>
+        </div> 
+        <br><br>
         <div class="logo" >
-            <img id="logo" src="media/titulo.png" style="align-content: center" height="100%" width="100%">
+            <img id="logo" src="media/titulo.png" style="align-content: center" height="80%" width="80%">
         </div>
     </header>
     <!--<div id="login" style="text-align: center; width: 50%; margin: 0px auto;">
@@ -25,28 +36,39 @@
     <div class="opcoes" style="text-align: center; width: 50%; margin: 0px auto;">
             <h3>Agora que você já tem interesse, vamos começar!</h3>
         <div class="afinidade" style="float: left">
-            <Button>Afinidade</Button>
-            <!-- <img src="media/btnAfinidade.png" alt="btnAfinidade" height="100%" width="100%" style="align-content: center">
+                
+            <Button class="principal" onclick="bttInt()">Afinidade</Button>
             <div id="listaInt">
-                <button>Educação</button>
-                <button>Saúde</button>
-                <button>Meio Ambiente</button>
-                <button>Animais</button>
-            </div>-->
+            <fieldset>
+                <form action="busca.php" method="POST">
+                    <div><input type="checkbox" value="Educação">Educação<br>
+                    <input type="checkbox" value="Saúde">Saúde<br>
+                    <input type="checkbox" value="Segurança">Segurança<br>
+                    <input type="checkbox" value="Conservação">Conservação<br>
+                    <input type="checkbox" value="Causa Animal">Causa Animal<br>
+                    <input type="checkbox" value="Causa Social">Causa Social<br></div>
+                    <Button type="submit">Pesquisar</Button>
+                </form>
+            </fieldset>
+            </div>
         
         </div>
         <div class="disponibilidade" style="float: right">
-            <Button>Disponibilidade</Button>
-            <!-- <img src="media/btnDisponibilidade.png" alt="btnDisponibilidade" height="100%" width="100%" style="align-content: center">
+            <Button class="principal" onClick="bttDias()">Disponibilidade</Button>
             <div id="listaDias">
-                    <button>Domingo</button>
-                    <button>Segunda-feira</button>
-                    <button>Terça-feira</button>
-                    <button>Quarta-feira</button>
-                    <button>Quinta-feira</button>
-                    <button>Sexta-feira</button>
-                    <button>Sábado</button>
-                </div>-->
+                    <fieldset>
+                            <form action="busca.php" method="POST">
+                                <div><input type="checkbox" value="Domingo">Domingo<br>
+                                <input type="checkbox" value="Segunda">Segunda<br>
+                                <input type="checkbox" value="Terça">Terça<br>
+                                <input type="checkbox" value="Quarta">Quarta<br>
+                                <input type="checkbox" value="Quinta">Quinta<br>
+                                <input type="checkbox" value="Sexta">Sexta<br>
+                                <input type="checkbox" value="Sabado">Sabado<br></div>
+                                <Button type="submit">Pesquisar</Button>
+                            </form>
+                        </fieldset>
+                </div>
         
         </div>
     </div>
