@@ -7,20 +7,20 @@
 	$banco = "voluntariado";
 
 	/* abre a conexão */
-	$link = mysql_connect($host,$usuario,$senha);
+	$link = mysqli_connect($host,$usuario,$senha);
 	if(!$link)
 	{
 		/* não conseguiu abrir a conexão */
-		echo mysql_error();
+		echo mysqli_error();
 		die();
 	}
 
 	/* seleciona o banco de dados */
-	if(!mysql_select_db($banco))
+	if(!mysqli_select_db($link, $banco))
 	{
 		/* erro ao selecionar o banco de dados */
-		echo mysql_error();
-		mysql_close($link);
+		echo mysqli_error();
+		mysqli_close($link);
 		die();
 	}
 ?>

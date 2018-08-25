@@ -31,6 +31,7 @@ use voluntariado;
 
 CREATE TABLE IF NOT EXISTS `atribuicoes` (
   `funcao` int(11) NOT NULL DEFAULT '0',
+  `projeto` int(11) NOT NULL DEFAULT '0',
   `usuario` int(11) NOT NULL DEFAULT '0',
   `presencaConsecutiva` int(11) NOT NULL,
   `presencaTotal` int(11) NOT NULL,
@@ -38,7 +39,8 @@ CREATE TABLE IF NOT EXISTS `atribuicoes` (
   `entrada` date DEFAULT NULL,
   PRIMARY KEY (`funcao`,`usuario`),
   KEY `funcao` (`funcao`),
-  KEY `usuario` (`usuario`)
+  KEY `usuario` (`usuario`),
+  KEY `projeto` (`projeto`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -99,3 +101,12 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `comunicativo` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+INSERT INTO `projetos` (`id`, `nome`, `inicio`, `localidade`, `horario`, `fim`, `diaDeSemana`, `descricao`, `categoria`, `objetivo`, `metodologia`, `capacitacao`, `cronograma`, `relevancia`) VALUES (NULL, 'Projeto', '2018-08-01', 'fgawyugeya', 'hajkhbuygas', '2018-08-23', 'daa', 'dsdfdvfvewe', 'fvsdvdsvdsdv', 'dsvdsvdssvsdvd', 'vdssddvsd', 'vsdvsdvsdvds', 'dsvsddvssd', '9');
+
+INSERT INTO `usuarios` (`id`, `nome`, `idade`, `descricao`, `email`, `telefone`, `senha`, `proativo`, `organizado`, `produtivo`, `simpatico`, `comunicativo`) VALUES (NULL, 'Usuario', '88', 'usigiuagas', 'kgkgjyg', '879', 'kjug', '9', '9', '9', '9', '9');
+
+INSERT INTO `funcoes` (`projeto`, `funcao`) VALUES ('0', 'Funcao');
+
+INSERT INTO `atribuicoes` (`funcao`, `projeto`, `usuario`, `presencaConsecutiva`, `presencaTotal`, `gerente`, `entrada`) VALUES ('0', '0', '0', '9', '9', '9', '2018-08-06');
