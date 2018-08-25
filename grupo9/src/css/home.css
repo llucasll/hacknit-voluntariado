@@ -1,3 +1,55 @@
+#login{
+    padding: 20px;
+    margin:0 auto;
+    height:60px;
+}
+#login #input body{
+    align-content: center;
+    margin: 0 auto;
+}
+
+
+p{
+    text-align: center;
+    padding: 0 auto;
+}
+
+
 #listaInt, #listaDias{
     display: none;
+}
+
+header img{
+    text-align: center;
+    margin: 0% auto;
+    width: 50%;
+    margin-top: 30px;
+}
+
+body{
+    background-color: #ecf4f3;
+}
+
+div.opcoes div.afinidade{
+    position: relative;
+    border-width: 0px;
+    border-radius: 10px;
+    max-width: 300px;
+    justify-content: left;
+    align-content: left;
+    float: left;
+}
+
+div.opcoes div.disponibilidade{
+    position: relative;
+    border-width: 0px;
+    border-radius: 10px;
+    max-width: 300px;
+    justify-content: right;
+    align-content: right;
+}
+
+div.opcoes img{
+    float: center;
+    margin-bottom: 30px;
 }
