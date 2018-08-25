@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="../css/cadastro.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
         <meta charset="UTF-8"/>
         <title>Login</title>
     </head>
     <body>
-        <form>
-            Nome:
-            <input type="text" name="username">
-            Senha:
-            <input type="password" name="psw">
-            Idade:
-            <input type="text" name="age">
-            Email:
-            <input type="text" name="email">
-            Descrição:
-            <input type="text" name="description">
-            Telefone:
-            <input type="text" name="phone">
-            
-            
-            
+        <header>
+            <div style="text-align: center; margin: 0px auto;">
+                <img id="logo" src="../../media/titulo.png" style="align-content: center" height="100%" width="100%">
+            </div>
+        </header>
+        
+        
+        <fieldset class="cadastro">
+        <div class="cadastro">
+        <form action="cadastrar.php" method="POST">
+            <input type="text" name="username" placeholder="Nome" maxlength="200"><br>
+            <input type="password" name="psw" type="password" placeholder="Senha" maxlength="200"><br>
+            <input type="text" name="age" placeholder="Idade" maxlength="2"><br>
+            <input type="text" name="email" placeholder="Email" type="email" maxlength="100"><br>
+            <input type="text" name="description" placeholder="Descrição" maxlength="500"><br>
+            <input type="text" name="phone" placeholder="Telefone" maxlength="14"><br>
             
             <button type="submit">Cadastrar</button>
         
+        
         </form>
+        </div>
+        </fieldset>
     </body>
 </html>
