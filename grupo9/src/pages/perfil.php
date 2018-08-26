@@ -70,7 +70,8 @@
 		            <h4><b>Nome do Evento</b></h4> 
 		            <p>LOREM IPSUM</p> 
 		        </div>
-		    </div>
+			</div>
+			<a class="bttPerson" href="../index.html" >Pesquisar outros projetos</a>
 		</div>
 
 		<div class="tela-premios">

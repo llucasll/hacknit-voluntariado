@@ -22,6 +22,7 @@ header{
     font-size: 1em;
     border-radius: 10px;
     font-family: 'Raleway', sans-serif;
+    margin-left: 42vw;
 }
 .bttPerson:hover{
     background-color: #57a99a;
@@ -64,8 +65,9 @@ i{
     width: 20%;
     margin-left: 40px;
     padding: 0 0 10px 0;
-    margin-bottom: 15%;
+    text-align: center;
 }
+
 .day{
     background-color: #316b60;
     padding: 2px;
@@ -96,6 +98,9 @@ footer{
         width: 20%;
         margin-left: 40px;
         padding: 0 0 10px 0;
+        margin-bottom: 50px;
+    }
+    .tela-atuais{
         margin-bottom: 20%;
     }
     .day{
@@ -115,7 +120,9 @@ footer{
     .tela-atuais .card{
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         width: 80%;
-        margin: 10%;
+        margin-bottom: 50px;
+    }
+    .tela-atuais{
         margin-bottom: 15%;
     }
     .day{
@@ -136,7 +143,9 @@ and (max-width: 1025px) {
     .tela-atuais .card{
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         width: 80%;
-        margin: 10%;
+        margin-bottom: 50px;
+    }
+    .tela-atuais{
         margin-bottom: 15%;
     }
     .day{
