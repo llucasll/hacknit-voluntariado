@@ -1,5 +1,5 @@
 <?php
-	$id = $_REQUEST['id'] = 0;
+	$id = $_REQUEST['id'];// = 0;
 	if(!isset($_REQUEST['id'])){
 		$redirect = "../index.php";
 		header("location: $redirect");
@@ -35,7 +35,9 @@
 	</head>
 	<body>
 		<header>
-			<img src="../media/titulo.png" style="width:15%">
+			<a href = "../index.html">
+				<img src="../media/titulo.png" style="width:15%">
+			</a>
 		</header>
 		<?php
 		?>

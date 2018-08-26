@@ -48,7 +48,9 @@
 		?>
 		
 		<header>
-		<img id="persona" src="../media/titulo.png" height="20%" width="20%">  
+			<a href = "../index.html">
+				<img src="../media/titulo.png" style="width:15%">
+			</a>
 		</header>
 		<!-- nome do usuario, descrição e titulo -->
 		<div class="infos">
