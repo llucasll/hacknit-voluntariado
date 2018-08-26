@@ -6,9 +6,9 @@
 	}
 	else{
 		$sql = "select * from projetos where id=$id";
-		include "../bd/select.php";
-		//echo gettype($resposta);
+		include "../src/bd/select.php";
 		/*
+		//echo gettype($resposta);
 		$nome = $resposta[0]["nome"];
 		$descricao = $resposta[0]["descricao"];
 		$objetivo = $resposta[0]["objetivo"];
@@ -28,6 +28,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../src/css/verProjetos.css">
 		<script src="../src/js/projeto.js"></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
