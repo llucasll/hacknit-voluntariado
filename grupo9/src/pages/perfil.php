@@ -55,7 +55,7 @@
 		    <img id="persona" src="../media/persona1.png" height="20%" width="20%">  
 		    <h1><?= $usuario["nome"] ?></h1>
 		    <h2>Voluntário iniciante</h2>
-		    <p id="descricao"><?= $usuario["descricao"] ?><</p>
+		    <p id="descricao"><?= $usuario["descricao"] ?></p>
 		</div>
 		<div class="tela-atuais">
 		
