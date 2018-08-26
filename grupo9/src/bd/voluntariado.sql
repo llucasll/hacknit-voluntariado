@@ -1,34 +1,10 @@
 
--- phpMyAdmin SQL Dump
--- version 4.1.14
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: 25-Ago-2018 às 10:07
--- Versão do servidor: 5.6.17
--- PHP Version: 5.5.12
+-- drop database if exists voluntariado;
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
--- create database `voluntariado`;
--- use voluntariado;
---
-
--- --------------------------------------------------------
-
-drop database if exists voluntariado;
-
-create database voluntariado;
+-- create database voluntariado;
 use voluntariado;
 
+DROP TABLE IF EXISTS `atribuicoes`;
 CREATE TABLE IF NOT EXISTS `atribuicoes` (
   `funcao` int(11) NOT NULL DEFAULT '0',
   `projeto` int(11) NOT NULL DEFAULT '0',
@@ -49,6 +25,7 @@ CREATE TABLE IF NOT EXISTS `atribuicoes` (
 -- Estrutura da tabela `funcoes`
 --
 
+DROP TABLE IF EXISTS `funcoes`;
 CREATE TABLE IF NOT EXISTS `funcoes` (
   `projeto` int(11) NOT NULL DEFAULT '0',
   `funcao` varchar(60) NOT NULL DEFAULT '',
@@ -62,6 +39,7 @@ CREATE TABLE IF NOT EXISTS `funcoes` (
 -- Estrutura da tabela `projetos`
 --
 
+DROP TABLE IF EXISTS `projetos`;
 CREATE TABLE IF NOT EXISTS `projetos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` tinytext NOT NULL,
@@ -86,6 +64,7 @@ CREATE TABLE IF NOT EXISTS `projetos` (
 -- Estrutura da tabela `usuarios`
 --
 
+DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id` int(11) AUTO_INCREMENT,
   `nome` tinytext NOT NULL,

@@ -3,10 +3,32 @@
 
 	$host = "localhost";
 	$user = "root";
-	$senha = "536498";
-	$banco = "voluntariado";
+	$senha = "llucasll";
+	
+	/*
+	$banco = "sys";
 
-	/* abre a conexão */
+	/* abre a conexão *
+	$link = new mysqli($host,$user,$senha, $banco);
+	
+	$sql = file_get_contents("../src/bd/voluntariado.sql"); //"drop database if exists voluntariado; create database voluntariado;";
+
+	/* check connection *
+	if (mysqli_connect_errno()) {
+		printf("Connect failed: %s\n", mysqli_connect_error());
+		exit();
+	}
+	/* enviando a consulta para o banco de dados *
+	$resposta = mysqli_query($link, $sql);
+	if(!$resposta){
+		/* erro ao executar a consulta *
+		echo mysqli_error($link);
+	}
+	
+	/* fecha a conexão *
+	mysqli_close($link);
+	*/
+	$banco = "voluntariado";
 	$link = new mysqli($host,$user,$senha, $banco);
 	
 	/* check connection */
@@ -14,4 +36,5 @@
 		printf("Connect failed: %s\n", mysqli_connect_error());
 		exit();
 	}
+
 ?>
