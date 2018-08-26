@@ -5,8 +5,12 @@ body{
     background-color: #ecf4f3;
     padding: 15px;
     text-align: center;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
 }
-#persona{
+header{
+    background-color: #202020;
+    padding: 5px 0;
+    text-align: center;
 }
 .bttPerson{
     background-color: #76dbd1;
@@ -38,8 +42,6 @@ h2{
     justify-content: center;
     align-items: center;  
     max-width: 1500px;
-    
-    
 }
 
 .premios p{
@@ -57,15 +59,12 @@ i{
     color: #ecf4f3;
     margin: 40px;
 }
-.tela-premios{
-    /* display: none;  */
-}
 .tela-atuais .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 20%;
     margin-left: 40px;
     padding: 0 0 10px 0;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
 .day{
     background-color: #316b60;
@@ -91,3 +90,65 @@ footer{
     color: #fff;
 }
 
+@media (min-width : 1025px) {
+    .tela-atuais .card{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 20%;
+        margin-left: 40px;
+        padding: 0 0 10px 0;
+        margin-bottom: 20%;
+    }
+    .day{
+        background-color: #316b60;
+        padding: 2px;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+    }
+    .tela-atuais .card .container{
+        padding: 5px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+@media (max-width : 600px) {
+    .tela-atuais .card{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 80%;
+        margin: 10%;
+        margin-bottom: 15%;
+    }
+    .day{
+        background-color: #316b60;
+        padding: 2px;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+    }
+    .tela-atuais .card .container{
+        padding: 5px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+@media (min-width: 601px) 
+and (max-width: 1025px) {
+    .tela-atuais .card{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 80%;
+        margin: 10%;
+        margin-bottom: 15%;
+    }
+    .day{
+        background-color: #316b60;
+        padding: 2px;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+    }
+    .tela-atuais .card .container{
+        padding: 5px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+    }
+}

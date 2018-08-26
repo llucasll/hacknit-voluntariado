@@ -13,15 +13,17 @@
 <body>
     
     <!-- div para a página resultado de busca, essa div não é necessária para a personalização 
-da página se pode usar o body ou .html -->
-    <!--div para a caixa lateral que se localizará a esquerda para que a busca 
-    possa continuar na página de resultados -->
-    
+    da página se pode usar o body ou .html -->
+   
     <div class="conteudo">
         <header>
             <img src="../../media/titulo.png"  style="width:15%">
         </header>
+        <!--div para a caixa lateral que se localizará a esquerda para que a busca 
+        possa continuar na página de resultados -->
+    
         <div class ="buscaLateral">
+        <!-- filtro para busca -->
             <form class="form" action="tela_de_resultado.php" method='POST'>
                     <h3>Área:</h3>
                     <input type="radio" class="filter" name="interesse" value="educacao" unchecked />Educação<br>
@@ -41,14 +43,22 @@ da página se pode usar o body ou .html -->
             </form>
             </div>
             <?php
-            $tmp = $_POST["interesse"];
-            $tmp2 = $_POST["dia"];
+            if(isset($_POST["dia"])){
+                $tmp2 = $_POST["dia"];
+            }else{
+                $tmp2 = NULL;
+            }
+            if(isset($_POST["interesse"])){
+                $tmp = $_POST["interesse"];
+            }else{
+                $tmp = NULL;
+            }
 			$sql = "select * from projetos where ((categoria = '$tmp') OR (diaDeSemana = '$tmp2'))";
 			include "../bd/select.php";
 			
 			foreach($resposta as $linha){
 				if(count($linha)){				
-					
+					// gerador de resultados
 					?><div class="card">
                     <img src="<?= $linha["imagem"] ?>" alt="Avatar" style="width:100%">
                 <div class="day"><?= utf8_encode($linha["inicio"]) ?></div>
