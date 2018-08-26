@@ -1,13 +1,14 @@
 
 -- drop database if exists voluntariado;
 
+drop database if exists voluntariado;
+
 -- create database voluntariado;
 use voluntariado;
 
 DROP TABLE IF EXISTS `atribuicoes`;
 CREATE TABLE IF NOT EXISTS `atribuicoes` (
   `funcao` int(11) NOT NULL DEFAULT '0',
-  `projeto` int(11) NOT NULL DEFAULT '0',
   `usuario` int(11) NOT NULL DEFAULT '0',
   `presencaConsecutiva` int(11) NOT NULL,
   `presencaTotal` int(11) NOT NULL,
@@ -15,8 +16,7 @@ CREATE TABLE IF NOT EXISTS `atribuicoes` (
   `entrada` date DEFAULT NULL,
   PRIMARY KEY (`funcao`,`usuario`),
   KEY `funcao` (`funcao`),
-  KEY `usuario` (`usuario`),
-  KEY `projeto` (`projeto`)
+  KEY `usuario` (`usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -54,6 +54,7 @@ CREATE TABLE IF NOT EXISTS `projetos` (
   `metodologia` varchar(400) NOT NULL,
   `capacitacao` varchar(300) DEFAULT NULL,
   `cronograma` varchar(300) DEFAULT NULL,
+  `imagem` text(1000),
   `relevancia` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
@@ -81,11 +82,4 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
---
-INSERT INTO `projetos` (`id`, `nome`, `inicio`, `localidade`, `horario`, `fim`, `diaDeSemana`, `descricao`, `categoria`, `objetivo`, `metodologia`, `capacitacao`, `cronograma`, `relevancia`) VALUES (0, 'Projeto', '2018-08-01', 'fgawyugeya', 'hajkhbuygas', '2018-08-23', 'daa', 'dsdfdvfvewe', 'fvsdvdsvdsdv', 'dsvdsvdssvsdvd', 'vdssddvsd', 'vsdvsdvsdvds', 'dsvsddvssd', '9');
-
-INSERT INTO `usuarios` (`id`, `nome`, `idade`, `descricao`, `email`, `telefone`, `senha`, `proativo`, `organizado`, `produtivo`, `simpatico`, `comunicativo`) VALUES (0, 'Usuario', '88', 'usigiuagas', 'kgkgjyg', '879', 'kjug', '9', '9', '9', '9', '9');
-
-INSERT INTO `funcoes` (`projeto`, `funcao`) VALUES ('0', 'Funcao');
-
-INSERT INTO `atribuicoes` (`funcao`, `projeto`, `usuario`, `presencaConsecutiva`, `presencaTotal`, `gerente`, `entrada`) VALUES ('0', '0', '0', '9', '9', '9', '2018-08-06');
+INSERT INTO `voluntariado`.`projetos` (`id`, `nome`, `inicio`, `localidade`, `horario`, `fim`, `diaDeSemana`, `descricao`, `categoria`, `objetivo`, `metodologia`, `capacitacao`, `cronograma`, `relevancia`,`imagem`) VALUES (NULL, 'Patinação coletiva', '2018-08-01', 'Rio de Janeiro', '18-00', '2018-08-23', 'sab', 'Um evento voltado ao incentivo à patinação coletiva', 'Patinação;Entregador de garrafinhas', 'Incentivar uma vida mais saudável à população.', 'Ensinar a patinar e acompanhar, até que se desenvolvam grupos autonomos.', 'Nos primeiros dias,serão realizadas oficinas para treinamento dos menos experientes.', 'Duas primeiras semanas: Treinamento; Duas proximas semanas:praticas coletivas', '9', 'http://www.patins.niteroi.org.br/uploads/2/4/6/4/24644227/9464819_orig.jpg');
