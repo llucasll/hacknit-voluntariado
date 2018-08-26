@@ -41,8 +41,16 @@ da página se pode usar o body ou .html -->
             </form>
             </div>
             <?php
-            $tmp = $_POST["interesse"];
-            $tmp2 = $_POST["dia"];
+            if(isset($_POST["dia"])){
+                $tmp2 = $_POST["dia"];
+            }else{
+                $tmp2 = NULL;
+            }
+            if(isset($_POST["interesse"])){
+                $tmp = $_POST["interesse"];
+            }else{
+                $tmp = NULL;
+            }
 			$sql = "select * from projetos where ((categoria = '$tmp') OR (diaDeSemana = '$tmp2'))";
 			include "../bd/select.php";
 			
