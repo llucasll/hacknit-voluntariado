@@ -2,9 +2,9 @@
 body{
     background-color: #ecf4f3;
 }
+
 header div{
     text-align: center;
-    width: 50%;
     margin: 0px auto;
 }
 
@@ -17,32 +17,112 @@ fieldset.cadastro{
     margin-top: 50px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     text-align: center;
-    width: 50%;
     border-width: 0px;
     margin: 0px auto;
-    max-width: 300px;
     background-color: #fff;
     padding: 20px;
 }
 
 fieldset.cadastro div.cadastro form input{
-    width: 380px;
-    height: 28px;
-    margin-bottom: 20px;
-    font-size: 1.2em;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     border: none;
     border-bottom: 1px solid #555151;
 }
+
 fieldset.cadastro div.cadastro form button{
-    width: 200px;
-    height: 50px;
-    font-size: 25px;
     font-weight: normal;
     color: #555151;
     background-color: #76dbd1;
     font-family: 'Raleway', sans-serif;
     border-radius: 5px;
     border-width: 0px;
+}
+
+@media (min-width : 1025px) {
+    header div{
+        width: 30%;
+    }
+    
+    fieldset.cadastro{
+        width: 40%;
+        height: auto;
+    }
+    
+    fieldset.cadastro div.cadastro form input{
+        width: 380px;
+        height: 28px;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    fieldset.cadastro div.cadastro form button{
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+    }
+}
+@media (max-width : 600px) {
+    header div{
+        width: 60%;
+    }
+    
+    header{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    fieldset.cadastro{
+        width: 80%;
+        border-width: 0px;
+        margin: 0px auto;
+        padding: 20px;
+        padding-top: 15%
+    }
+    
+    fieldset.cadastro div.cadastro form input{
+        width: 80%;
+        height: 50%;
+        margin-bottom: 15%;
+        font-size: 3em;
+    }
+    fieldset.cadastro div.cadastro form button{
+        width: 40%;
+        height: auto;
+        font-size: 3.2em;
+        margin-bottom: 10%;
+        padding: 10%;
+    }
+
+}
+@media (min-width: 601px) 
+and (max-width: 1025px) {
+    header div{
+        width: 60%;
+    }
+    
+    header{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    fieldset.cadastro{
+        width: 80%;
+        border-width: 0px;
+        margin: 0px auto;
+        padding: 20px;
+        padding-top: 15%
+    }
+    
+    fieldset.cadastro div.cadastro form input{
+        width: 80%;
+        height: 50%;
+        margin-bottom: 15%;
+        font-size: 3em;
+    }
+    fieldset.cadastro div.cadastro form button{
+        font-size: 3.2em;
+        margin-bottom: 10%;
+        padding: 5%;
+    }
 }
