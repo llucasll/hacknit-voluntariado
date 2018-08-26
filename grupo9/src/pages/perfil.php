@@ -45,11 +45,11 @@
 				$nome = $resposta[0]["nome"];
 			}
 		?>
-			
-			
 		
+		<header>
+		<img id="persona" src="../media/titulo.png" height="20%" width="20%">  
+		</header>
 		
-	
 		<div class="infos">
 		    <img id="persona" src="../media/persona1.png" height="20%" width="20%">  
 		    <h1><?= $usuario["nome"] ?></h1>
@@ -59,10 +59,6 @@
 		    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
 		    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
 		    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		    <button class="bttPerson">Projetos atuais</button>
-		    <button class="bttPerson">Interesses</button>
-		    <button class="bttPerson">Projetos passados</button>
-		    <button class="bttPerson">Conquistas</button>
 		</div>
 		<div class="tela-atuais">
 		    <h1 id="titulo-atuais">Projetos que você está ajudando!</h1>
