@@ -7,27 +7,30 @@
 	$phone = $_REQUEST['phone'];
 
 	$sql = "insert into `usuarios` (nome, senha, idade, email, descricao, telefone) values(\"$username\", \"$psw\", $age, \"$email\", \"$description\", $phone);";
-	//echo $sql;
+	echo $sql;
 	/* enviando a consulta para o banco de dados */
 	require "../bd/conecta.php";
-	$resposta = mysqli_query($link, $sql);
+	$r = mysqli_query($link, $sql);
 	
 	//echo gettype($resposta);
 	/* fecha a conexão */
 	mysqli_close($link);
 	
-	if($resposta){
-		$sql = "select * from usuarios where email=$email";
-		include "../src/bd/select.php";
-		//print_r($resposta);
+	if($r){
+		$sql = "select * from usuarios where email=\"$email\"";
+		include "../bd/select.php";
 		
-		//$id = $resposta[0]["id"];
+		//header("location: ../../index.html");
+		//echo "resp: ";
+		//echo gettype($resposta);
+		
+		$id = $resposta[0]["id"];
 				//print_r($linha);
-		//header("location: ../../page/perfil.php?id=$id");
+		header("location: ../../page/perfil.php?id=$id");
 	}
 	else{
-		echo "oi";
-		print_r($resposta);
+		echo "Erro.";
+		print_r($r);
 		/* erro ao executar a consulta */
 		echo mysqli_error();
 	}
