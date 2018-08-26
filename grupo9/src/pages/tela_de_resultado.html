@@ -14,19 +14,19 @@
 da página se pode usar o body ou .html -->
     <!--div para a caixa lateral que se localizará a esquerda para que a busca 
     possa continuar na página de resultados -->
-
+    
     <div class="conteudo">
+        <header>
+            <img src="../../media/titulo.png"  style="width:15%">
+        </header>
         <div class ="buscaLateral">
-            <form class="form" action="/action_page.php">
+            <form class="form">
                     <h3>Área:</h3>
                     <input type="checkbox" class="filter" name="education" value="false" unchecked />Educação<br>
-
                     <input type="checkbox" class="filter" name="health" value="false" unchecked />Saúde<br>
                     <input type="checkbox" class="filter" name="meioambiente" value="false" unchecked />Meio Ambiente<br>
-
                     <input type="checkbox" class="filter" name="security" value="false" unchecked />Segurança<br>
                     <h3>Dias da semana:</h3>
-
                     <input type="checkbox" class="filter" name="sunday" value="false" unchecked />Domingo<br>
                     <input type="checkbox" class="filter" name="monday" value="false" unchecked />Segunda<br>
                     <input type="checkbox" class="filter" name="thursday" value="false" unchecked />Terça<br>
@@ -34,27 +34,45 @@ da página se pode usar o body ou .html -->
                     <input type="checkbox" class="filter" name="tuesday" value="false" unchecked />Quinta<br>
                     <input type="checkbox" class="filter" name="friday" value="false" unchecked />Sexta<br>
                     <input type="checkbox" class="filter" name="saturday" value="false" unchecked />Sábado<br>
-                    <button id="submit">Limpar filtros</button>                            
+                    <button id="clear" onclick="checkboxClear()">Limpar filtros</button>                            
             </form>
             </div>
             <div class="card">
-                    <img src="../../media/praia.jpg" alt="Avatar" style="width:100%">
-                <div class="day">Dia 27/08/2018 - Icaraí</div>
+                    <img src="../../media/nudecs.jpeg" alt="Avatar" style="width:100%">
+                <div class="day">18/08/2018</div>
                 <div class="container">
-                    <h4><b>Nome do Evento</b></h4> 
-                    <p>Descrição linda aqui</p> 
+                    <h4><b>Núcleo de Defesa Civil</b></h4> 
+                    <p>Essa turma de voluntários tem a característica de receber moradores de diversas regiões do município para compor o grupo.</p> 
                     <button id="ver">Ver projeto</button>
                 </div>
             </div>
-            
+            <div class="card">
+                    <img src="../../media/praia.jpg" alt="Avatar" style="width:100%">
+                <div class="day">19/09/2018 - Praias de Niterói</div>
+                <div class="container">
+                    <h4><b>Clean Up The World</b></h4> 
+                    <p>A SMARHS tem como tradição a realização anual do Dia Mundial de Limpeza de Rios e Praias</p>
+                    <button id="ver">Ver projeto</button>
+                </div>
+            </div>
+            <div class="card">
+                    <img src="../../media/animais.jpg" alt="Avatar" style="width:100%">
+                <div class="day">Domingo - campo de São Bento</div>
+                <div class="container">
+                    <h4><b>Proteção Animal</b></h4> 
+                    <p>Todo segundo e último domingo de cada mês no campo de São Bento em Icaraí, dezenas de animais ganham um novo lar.</p> 
+                    <button id="ver">Ver projeto</button>
+                </div>
+            </div>
         </div>
-    </div>
-    <!--
         <footer>
-        <p>Projeto desenvolvido durante a HackNit</p>
-        <img src="../../media/Logo_niteroi.png" alt="Logo Niteroi" style="width:15%">
-    </footer>
-    -->
+                <p>Projeto desenvolvido durante a HackNit</p>
+                <img src="../../media/Logo_niteroi.png" alt="Logo Niteroi" style="width:10%">
+            </footer>
+    </div>
+    
+    
+   
     
 </body>
 </html>
