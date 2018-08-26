@@ -25,13 +25,13 @@
     </header>
     
     <div class="opcoes" style="text-align: center; width: 50%; margin: 0px auto;">
-            <h3>Agora que você já tem interesse, vamos começar!</h3>
+        <h3>Agora que você já tem interesse, vamos começar!</h3>
         <div class="afinidade" style="float: left">
                 
             <Button class="principal" onclick="bttInt()">Afinidade</Button>
             <div id="listaInt">
             <fieldset>
-                <form action="src/pages/tela_de_resultado.php" method="POST"><!-- Inclusão com o javascript -->
+                <form action="page/tela_de_resultado.php" method="GET"><!-- Inclusão com o javascript -->
                     <div><input type="radio" name="interesse" value="educacao">Educação<br>
                     <input type="radio" name="interesse" value="saude">Saúde<br>
                     <input type="radio" name="interesse" value="seguranca">Segurança<br>
@@ -47,19 +47,19 @@
         <div class="disponibilidade" style="float: right">
             <Button class="principal" onClick="bttDias()">Disponibilidade</Button>
             <div id="listaDias">
-                    <fieldset><!-- Inclusão com o javascript -->
-                            <form action="src/pages/tela_de_resultado.php" method="POST">
-                                <div><input type="radio" name="dia" value="dom">Domingo<br>
-                                <input  type="radio"  name="dia" value="seg">Segunda<br>
-                                <input  type="radio"  name="dia" value="ter">Terça<br>
-                                <input type="radio"  name="dia" value="qua">Quarta<br>
-                                <input type="radio"  name="dia" value="qui">Quinta<br>
-                                <input type="radio"  name="dia" value="sex">Sexta<br>
-                                <input type="radio"  name="dia" value="sab">Sabado<br></div>
-                                <Button type="submit">Pesquisar</Button>
-                            </form>
-                        </fieldset>
-                </div>
+                <fieldset><!-- Inclusão com o javascript -->
+                    <form action="page/tela_de_resultado.php" method="GET">
+                        <div><input type="radio" name="dia" value="dom">Domingo<br>
+                        <input  type="radio"  name="dia" value="seg">Segunda<br>
+                        <input  type="radio"  name="dia" value="ter">Terça<br>
+                        <input type="radio"  name="dia" value="qua">Quarta<br>
+                        <input type="radio"  name="dia" value="qui">Quinta<br>
+                        <input type="radio"  name="dia" value="sex">Sexta<br>
+                        <input type="radio"  name="dia" value="sab">Sabado<br></div>
+                        <Button type="submit">Pesquisar</Button>
+                    </form>
+                </fieldset>
+            </div>
         
         </div>
     </div>

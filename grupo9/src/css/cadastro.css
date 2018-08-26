@@ -1,16 +1,5 @@
-
 body{
     background-color: #ecf4f3;
-}
-
-header div{
-    text-align: center;
-    margin: 0px auto;
-}
-
-header{
-    margin-top: 30px;
-    margin-bottom: 50px;
 }
 
 fieldset.cadastro{
@@ -40,9 +29,6 @@ fieldset.cadastro div.cadastro form button{
 }
 
 @media (min-width : 1025px) {
-    header div{
-        width: 30%;
-    }
     
     fieldset.cadastro{
         width: 40%;
@@ -62,15 +48,7 @@ fieldset.cadastro div.cadastro form button{
         font-size: 25px;
     }
 }
-@media (max-width : 600px) {
-    header div{
-        width: 60%;
-    }
-    
-    header{
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
+@media (max-width : 600px)
     
     fieldset.cadastro{
         width: 80%;
@@ -97,14 +75,6 @@ fieldset.cadastro div.cadastro form button{
 }
 @media (min-width: 601px) 
 and (max-width: 1025px) {
-    header div{
-        width: 60%;
-    }
-    
-    header{
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
     
     fieldset.cadastro{
         width: 80%;

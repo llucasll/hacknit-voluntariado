@@ -1,10 +1,11 @@
 <?php
-	$id = $_REQUEST['id'] = 0;
+	//$id = $_REQUEST['id'] = 0;
 	if(!isset($_REQUEST['id'])){
 		$redirect = "../index.php";
 		header("location: $redirect");
 	}
 	else{
+		$id = $_REQUEST['id'];
 		$sql = "select * from projetos where id=$id";
 		include "../src/bd/select.php";
 		/*
