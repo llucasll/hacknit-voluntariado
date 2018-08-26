@@ -13,8 +13,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="../css/perfil.css">
-		<script src="../js/perfil.js"></script>
+		<link rel="stylesheet" type="text/css" href="../src/css/perfil.css">
+		<script src="../src/js/perfil.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	</head>
@@ -22,7 +22,7 @@
 		<?php
 			$sql = "select * from atribuicoes where usuario=$id";
 			//echo getcwd();
-			include "../bd/select.php";
+			include "../src/bd/select.php";
 			//print_r($resposta[1]);
 			$projetos = array();	
 			foreach($resposta as $linha){
@@ -41,7 +41,7 @@
 			foreach($projetos as $id){
 				$sql = "select * from projetos where id=$id";
 
-				include "../bd/select.php";
+				include "../src/bd/select.php";
 				$nome = $resposta[0]["nome"];
 			}
 		?>
