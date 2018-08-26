@@ -48,19 +48,7 @@
 			
 			
 		
-		<div class="trofeis">
-			<div class="premio">
-				<i class="fas fa-star"></i>
-				<p>Primeiro Projeto</p>
-				<i class="fas fa-trophy"></i>
-				<p>Um Mês de Participação</p>
-				<i class="fas fa-medal"></i>
-				<p>Partcipou de cinquenta projetos</p>
-
-
-			</div>	
-
-		</div>
+		
 	
 		<div class="infos">
 		    <img id="persona" src="../media/persona1.png" height="20%" width="20%">  
@@ -83,26 +71,34 @@
 		        <div class="day">Dia 27/08/2018 - Icaraí</div>
 		        <div class="container">
 		            <h4><b>Nome do Evento</b></h4> 
-		            <p>Descrição linda aqui</p> 
+		            <p>LOREM IPSUM</p> 
 		        </div>
 		    </div>
 		</div>
+
 		<div class="tela-premios">
 		    <h1 id="titulo-premios">Conquistas</h1>
 		    <div class="premios">
-		        <i class="fas fa-trophy"></i>
-		        <i class="fas fa-trophy"></i>
-		        <i class="fas fa-trophy"></i>
-		        <i class="fas fa-trophy"></i>
-		        <i class="fas fa-trophy"></i>
-		    </div>
+				<i class="fas fa-star"></i>
+				<p>Primeiro Projeto</p>
+				<i class="fas fa-medal"></i>
+				<p>Um Mês de Participação</p>
+				<i class="fas fa-trophy"></i>
+				<p>Partcipou de cinquenta projetos</p>
+
+
+			</div>	
+
 		</div>
+		
+		
+			
 
 		<footer>
 		    <p>Projeto desenvolvido durante a HackNit</p>
 		    <img src="../media/Logo_niteroi.png" alt="Logo Niteroi" style="width:15%">
 		</footer>
->>>>>>> 0d09da58349ba8b44b1d6fdc3f8d7f4a889e38f8
+
 	</body>
 </html>
 

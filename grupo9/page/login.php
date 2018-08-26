@@ -1,3 +1,3 @@
 <?php
-	include "../src/pages/login.php";
+	include "../src/pages/login.html";
 ?>

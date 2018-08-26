@@ -3,7 +3,7 @@
 
 	$host = "localhost";
 	$user = "root";
-	$senha = "536498";
+	$senha = "";
 	$banco = "voluntariado";
 
 	/* abre a conexão */

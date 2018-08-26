@@ -24,6 +24,7 @@ body{
 }
 h1, h2{
     font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 h2{
     color: #555151
@@ -35,15 +36,21 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
+    max-width: 1500px;
     
+    
+}
+
+.premios p{
+    font-family: 'Raleway', sans-serif;
 }
 #titulo-premios, #titulo-atuais{
     margin-left: 20px;
     text-decoration: underline;
 }
 i{
-    background-color: #57a99a;
+    background-color: grey;
     padding: 1%;
     font-size: 2em;
     border-radius: 50%;
@@ -65,10 +72,12 @@ i{
     padding: 2px;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
     color: #fff;
+    font-family: 'Raleway', sans-serif;
 }
 .tela-atuais .card .container{
     padding: 5px;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 footer{
