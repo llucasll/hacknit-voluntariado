@@ -1,3 +1,3 @@
 <?php
-	include "../src/pages/cadastro_projeto.php";
+	include "../src/pages/cadastro_projeto.html";
 ?>
