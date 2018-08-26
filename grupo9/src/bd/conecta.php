@@ -3,7 +3,7 @@
 
 	$host = "localhost";
 	$user = "root";
-	$senha = "llucasll";
+	$senha = "";
 	
 	/*
 	$banco = "sys";
@@ -32,8 +32,8 @@
 	$link = new mysqli($host,$user,$senha, $banco);
 	
 	/* check connection */
-	if (mysqli_connect_errno()) {
-		printf("Connect failed: %s\n", mysqli_connect_error());
+	if (mysqli_connect_errno($link)) {
+		printf("Connect failed: %s\n", mysqli_connect_error($link));
 		exit();
 	}
 
