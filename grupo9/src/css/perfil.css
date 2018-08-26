@@ -7,14 +7,50 @@ body{
     text-align: center;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
 }
-header{
-    background-color: #202020;
-    padding: 5px 0;
-    text-align: center;
+header .topnave {
+    background-color: #555151;
+    height: 46px;
 }
+header .topnave b img{
+    margin-top: 6px;
+    height: 70%;
+    width: 200px;
+}
+header .topnave b{
+    margin-left: 43%;
+    align-content: center;
+    display: inline;
+    align-self: center;
+}
+
+header .topnave a{
+    font-family: 'Raleway', sans-serif;
+    display: inline;
+    font-style: none;
+    text-decoration: none;
+    padding: 6px 13px;
+    text-align: center;
+    font-size: 25px;
+    color: #ecf4f3;
+    float: right;
+}
+
+header .topnave a:hover{
+    font-family: 'Raleway', sans-serif;
+    padding: 6px 13px;
+    font-style: bolder;
+    text-decoration: none;
+    height: 46px;
+    text-align: center;
+    font-size: 25px;
+    color:#555151;
+    background-color: #ecf4f3;
+    float: right;
+}
+
 .bttPerson{
     background-color: #76dbd1;
-    border: none;
+    border: bolder;
     color: #555151;
     text-align: center;
     text-decoration: none;

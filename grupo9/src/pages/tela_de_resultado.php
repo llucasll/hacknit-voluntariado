@@ -26,10 +26,10 @@
         <!-- filtro para busca -->
             <form class="form" action="tela_de_resultado.php" method='POST'>
                     <h3>Área:</h3>
-                    <input type="radio" class="filter" name="interesse" value="educacao" unchecked />Educação<br>
-                    <input type="radio" class="filter" name="interesse" value="saude" unchecked />Saúde<br>
-                    <input type="radio" class="filter" name="interesse" value="ambiente" unchecked />Meio Ambiente<br>
-                    <input type="radio" class="filter" name="interesse" value="seguranca" unchecked />Segurança<br>
+                    <div><input type="radio" name="interesse" value="educacao">Educação<br>
+                    <input type="radio" name="interesse" value="saude">Saúde<br>
+                    <input type="radio" name="interesse" value="seguranca">Segurança<br>
+                    <input type="radio" name="interesse" value="conservacao">Conservação<br>
                     <h3>Dias da semana:</h3>
                     <input type="radio" class="filter" name="dia" value="dom" unchecked />Domingo<br>
                     <input type="radio" class="filter" name="dia" value="seg" unchecked />Segunda<br>
@@ -75,10 +75,10 @@
 			?>
             
         </div>
-        <footer>
+        <!-- <footer>
                 <p>Projeto desenvolvido durante a HackNit</p>
                 <img src="../../media/Logo_niteroi.png" alt="Logo Niteroi" style="width:10%">
-            </footer>
+            </footer> -->
     </div>
     
     

@@ -1,3 +1,3 @@
 <?php
-	include "../src/pages/tela_de_resultado.php";
+	include "../src/pages/tela_de_resultado.html";
 ?>

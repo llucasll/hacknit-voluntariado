@@ -48,7 +48,10 @@
 		?>
 		
 		<header>
-		<img id="persona" src="../media/titulo.png" height="20%" width="20%">  
+			<div class="topnave">
+				<b><img id="persona" src="../media/titulo.png" height="20%" width="20%"></b>
+				<a href="../src/pages/tela_de_resultado.html">Busca</a>
+			</div>  
 		</header>
 		<!-- nome do usuario, descrição e titulo -->
 		<div class="infos">
