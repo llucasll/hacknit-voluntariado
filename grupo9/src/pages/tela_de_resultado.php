@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -38,6 +40,29 @@ da página se pode usar o body ou .html -->
                     <button id="clear" onclick="checkboxClear()">Limpar filtros</button>                                         
             </form>
             </div>
+            <?php
+            $tmp = $_POST["interesse"];
+            $tmp2 = $_POST["dia"];
+			$sql = "select * from projetos where ((categoria = '$tmp') OR (diaDeSemana = '$tmp2'))";
+			include "../bd/select.php";
+			
+			foreach($resposta as $linha){
+				if(count($linha)){				
+					
+					?><div class="card">
+                    <img src="<?= $linha["imagem"] ?>" alt="Avatar" style="width:100%">
+                <div class="day"><?= utf8_encode($linha["inicio"]) ?></div>
+                <div class="container">
+                    <h4><?= utf8_encode($linha["nome"]) ?></h4> 
+                    <p><?= utf8_encode($linha["descricao"]) ?></p> 
+                    <a href="../../page/projeto.php?id=<?= $linha["id"] ?>" ><Button id="ver">Ver projeto</button></a>
+                </div>
+            </div><?php
+					
+					
+				}
+			}
+			?>
             
         </div>
         <footer>

@@ -24,6 +24,21 @@ body{
 .form input{
     margin-top:8px;
 }
+.form button{
+    float:left;
+    margin-top: 15px;
+    background-color: #76dbd1;
+    border: none;
+    color: #555151;
+    text-align: center;
+    text-decoration: none;
+    padding: 6px;
+    font-size: 1em;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
 #clear{
     float:left;
     margin-top: 15px;
