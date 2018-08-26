@@ -13,9 +13,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="../src/css/perfil.css">
+		<script src="../src/js/perfil.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="src/css/perfil.css">
-		<script src="src/js/perfil.js"></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	</head>
 	<body>
@@ -38,18 +38,18 @@
 				if(count($linha))
 					$usuario = $linha;
 			
-		?>
-			
-		<button>Interesses</button>
-		<button>Projetos passados</button>
-		<?php
 			foreach($projetos as $id){
 				$sql = "select * from projetos where id=$id";
+
 				include "../src/bd/select.php";
 				$nome = $resposta[0]["nome"];
 			}
 		?>
+			
+			
 		
+		
+	
 		<div class="infos">
 		    <img id="persona" src="../media/persona1.png" height="20%" width="20%">  
 		    <h1><?= $usuario["nome"] ?></h1>
@@ -71,25 +71,34 @@
 		        <div class="day">Dia 27/08/2018 - Icaraí</div>
 		        <div class="container">
 		            <h4><b>Nome do Evento</b></h4> 
-		            <p>Descrição linda aqui</p> 
+		            <p>LOREM IPSUM</p> 
 		        </div>
 		    </div>
 		</div>
+
 		<div class="tela-premios">
 		    <h1 id="titulo-premios">Conquistas</h1>
 		    <div class="premios">
-		        <i class="fas fa-trophy"></i>
-		        <i class="fas fa-trophy"></i>
-		        <i class="fas fa-trophy"></i>
-		        <i class="fas fa-trophy"></i>
-		        <i class="fas fa-trophy"></i>
-		    </div>
+				<i class="fas fa-star"></i>
+				<p>Primeiro Projeto</p>
+				<i class="fas fa-medal"></i>
+				<p>Um Mês de Participação</p>
+				<i class="fas fa-trophy"></i>
+				<p>Partcipou de cinquenta projetos</p>
+
+
+			</div>	
+
 		</div>
+		
+		
+			
 
 		<footer>
 		    <p>Projeto desenvolvido durante a HackNit</p>
 		    <img src="../media/Logo_niteroi.png" alt="Logo Niteroi" style="width:15%">
 		</footer>
+
 	</body>
 </html>
 

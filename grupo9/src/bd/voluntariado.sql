@@ -1,8 +1,12 @@
+
+-- drop database if exists voluntariado;
+
 drop database if exists voluntariado;
 
-create database voluntariado;
+-- create database voluntariado;
 use voluntariado;
 
+DROP TABLE IF EXISTS `atribuicoes`;
 CREATE TABLE IF NOT EXISTS `atribuicoes` (
   `funcao` int(11) NOT NULL DEFAULT '0',
   `usuario` int(11) NOT NULL DEFAULT '0',
@@ -21,6 +25,7 @@ CREATE TABLE IF NOT EXISTS `atribuicoes` (
 -- Estrutura da tabela `funcoes`
 --
 
+DROP TABLE IF EXISTS `funcoes`;
 CREATE TABLE IF NOT EXISTS `funcoes` (
   `projeto` int(11) NOT NULL DEFAULT '0',
   `funcao` varchar(60) NOT NULL DEFAULT '',
@@ -34,6 +39,7 @@ CREATE TABLE IF NOT EXISTS `funcoes` (
 -- Estrutura da tabela `projetos`
 --
 
+DROP TABLE IF EXISTS `projetos`;
 CREATE TABLE IF NOT EXISTS `projetos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` tinytext NOT NULL,
@@ -59,6 +65,7 @@ CREATE TABLE IF NOT EXISTS `projetos` (
 -- Estrutura da tabela `usuarios`
 --
 
+DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id` int(11) AUTO_INCREMENT,
   `nome` tinytext NOT NULL,
