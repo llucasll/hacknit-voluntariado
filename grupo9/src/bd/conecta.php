@@ -30,6 +30,7 @@
 	*/
 	$banco = "voluntariado";
 	$link = new mysqli($host,$user,$senha, $banco);
+	header("Content-type: text/html; charset=utf-8");
 	
 	/* check connection */
 	if (mysqli_connect_errno($link)) {

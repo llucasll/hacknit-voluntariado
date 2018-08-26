@@ -43,10 +43,10 @@
 		<div class="apresentacao">
 			<img src="<?= $resposta[0]["imagem"] ?>" >
 			<div class="informacoes">
-				<h2><?= $resposta[0]["nome"] ?></h2>
-				<p><?= $resposta[0]["descricao"] ?></p>
+				<h2><?= utf8_encode($resposta[0]["nome"]) ?></h2>
+				<p><?= utf8_encode($resposta[0]["descricao"]) ?></p>
 				<div class="info">
-					<p class="dados"><?= $resposta[0]["localidade"] ?></p>
+					<p class="dados"><?= utf8_encode($resposta[0]["localidade"]) ?></p>
 					<p class="dados"><?= $resposta[0]["inicio"] ?></p>
 				</div>
 				<i class="fas fa-check-circle"></i>
