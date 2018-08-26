@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/cadastro.css">
+        <link rel="stylesheet" type="text/css" href="../src/css/cadastro.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
         <meta charset="UTF-8"/>
         <title>Cadastre-se</title>
@@ -9,14 +9,14 @@
     <body>
         <header>
             <div style="text-align: center; margin: 0px auto;">
-                <img id="logo" src="../../media/titulo.png" style="align-content: center" height="80%" width="80%">
+                <img id="logo" src="../media/titulo.png" style="align-content: center" height="80%" width="80%">
             </div>
         </header>
         
         
         <fieldset class="cadastro">
         <div class="cadastro">
-        <form action="cadastrar.php" method="POST">
+        <form action="../src/interno/cadastrar.php" method="POST">
             <input type="text" name="username" placeholder="Nome" maxlength="200"><br>
             <input type="password" name="psw" type="password" placeholder="Senha" maxlength="200"><br>
             <input type="text" name="age" placeholder="Idade" maxlength="2"><br>
