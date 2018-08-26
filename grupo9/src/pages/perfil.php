@@ -20,6 +20,7 @@
 	</head>
 	<body>
 		<?php
+			// busca no banco de dados
 			$sql = "select * from atribuicoes where usuario=$id";
 			//echo getcwd();
 			include "../src/bd/select.php";
@@ -49,7 +50,7 @@
 		<header>
 		<img id="persona" src="../media/titulo.png" height="20%" width="20%">  
 		</header>
-		
+		<!-- nome do usuario, descrição e titulo -->
 		<div class="infos">
 		    <img id="persona" src="../media/persona1.png" height="20%" width="20%">  
 		    <h1><?= $usuario["nome"] ?></h1>
@@ -61,6 +62,8 @@
 		    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 		<div class="tela-atuais">
+		
+		<!-- projetos dos quais o usuario participa -->
 		    <h1 id="titulo-atuais">Projetos que você está ajudando!</h1>
 		    <div class="card">
 		        <img src="../media/foto.jpg" alt="Avatar" style="width:100%">
@@ -73,6 +76,8 @@
 		</div>
 
 		<div class="tela-premios">
+		
+		<!-- premiaçao que os usuarios recebem de acordo com seu engajamento  -->
 		    <h1 id="titulo-premios">Conquistas</h1>
 		    <div class="premios">
 				<i class="fas fa-star"></i>
