@@ -33,8 +33,8 @@
 	header("Content-type: text/html; charset=utf-8");
 	
 	/* check connection */
-	if (mysqli_connect_errno()) {
-		printf("Connect failed: %s\n", mysqli_connect_error());
+	if (mysqli_connect_errno($link)) {
+		printf("Connect failed: %s\n", mysqli_connect_error($link));
 		exit();
 	}
 
